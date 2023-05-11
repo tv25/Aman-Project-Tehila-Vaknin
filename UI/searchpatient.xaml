@@ -1,0 +1,38 @@
+﻿<Window x:Class="PlGui.searchpatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlGui"
+        mc:Ignorable="d"
+        Title="searchpatient" Height="450" Width="800">
+    <Grid>
+        <Label Content="הכנס תעודת זהות:" HorizontalAlignment="Left" Margin="398,21,0,0" VerticalAlignment="Top" Width="189" RenderTransformOrigin="1.187,0.664"/>
+        <TextBox x:Name="idpatient" HorizontalAlignment="Left" Height="22" Margin="145,29,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Width="106" PreviewTextInput="NumberValidationTextBox"  />
+       
+        <DataGrid x:Name="patientDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="26,122,116.333,235.667" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" IsReadOnly="True" SelectedIndex="0"  RenderTransformOrigin="0.5,0.5"   >
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.122"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.665"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="ID" Width="15*" Header="ID" Binding="{Binding id_Patient}" Foreground="Black" FontWeight="Bold"/>
+                <DataGridTextColumn x:Name="FIRSTNAME" Width="15*" Header="FirstName" Binding="{Binding FirstName}"/>
+                <DataGridTextColumn x:Name="LASTNAME" Width="15*" Header="LasttName" Binding="{Binding LastName}"/>
+                <DataGridTextColumn x:Name="CITY" Width="15*" Header="Address" Binding="{Binding City}"/>
+                <DataGridTextColumn x:Name="Street" Width="15*" Header="Address" Binding="{Binding Street}"/>
+                <DataGridTextColumn x:Name="NumberHome" Width="15*" Header="Address" Binding="{Binding Number_Home}"/>
+              
+                <DataGridTextColumn x:Name="DateOfBirth" Width="15*" Header="DateOfBirth" Binding="{Binding DateOfBirth}"/>
+                <DataGridTextColumn x:Name="Telephone" Width="15*" Header="Telephone" Binding="{Binding Telephone}"/>
+                <DataGridTextColumn x:Name="MobilePhone" Width="15*" Header="MobilePhone" Binding="{Binding MobilePhone}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="search" MouseDoubleClick="add_MouseDoubleClick" Content="search" HorizontalAlignment="Left" Margin="292,75,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

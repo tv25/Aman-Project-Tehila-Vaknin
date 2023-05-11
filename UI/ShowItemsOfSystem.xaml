@@ -1,0 +1,24 @@
+﻿<Window x:Class="PlGui.ShowItemsOfSystem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlGui"
+        mc:Ignorable="d"
+        Title="ShowItemsOfSystem" Height="450" Width="575.862" >
+    <Grid Margin="0,0,2,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Choose Option:" HorizontalAlignment="Left" Height="186" Margin="108,119,0,0" VerticalAlignment="Top" Width="333" FontSize="16" FontStyle="Italic" FontWeight="SemiBold" BorderBrush="#FF2BDCAB" Grid.ColumnSpan="2">
+            <StackPanel Margin="21,20,29,24">
+
+
+                <RadioButton x:Name ="rbcoronapatient" Content="חברי מחלקה" Height="35"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnGO" Content="GO" HorizontalAlignment="Left" Height="42" Margin="230,346,0,0" VerticalAlignment="Top" Width="105" Background="#FFB4EADA" FontSize="16" FontFamily="Kristen ITC" FontWeight="Bold" Click="btnGO_Click" Grid.ColumnSpan="2" />
+
+    </Grid>
+</Window>

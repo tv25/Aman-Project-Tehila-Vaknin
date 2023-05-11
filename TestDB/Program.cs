@@ -277,6 +277,7 @@ var patients = new List<Patient>
 
             };
 
+
 using (var db = new Data())
 {
     db.Patients.AddRange(patients);

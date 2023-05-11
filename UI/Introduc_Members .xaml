@@ -40,8 +40,8 @@
         <TextBox x:Name="tbname" HorizontalAlignment="Left" Height="24" Margin="102,67,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="tbcode" IsReadOnly="True" HorizontalAlignment="Left" Margin="102,31,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Height="23" Width="120" Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontSize="14"/>
 
-        <Label Content="שם " HorizontalAlignment="Left" Margin="227,67,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
-        <Label Content="תעודת זהות" HorizontalAlignment="Left" Margin="228,31,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <Label Content="תעודת זהות " HorizontalAlignment="Left" Margin="227,67,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <Label Content="שם פרטי" HorizontalAlignment="Left" Margin="228,31,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
 
         <DataGrid x:Name="lineStationDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="117.333,37,26.333,95.667" RowDetailsVisibilityMode="VisibleWhenSelected" Grid.Column="1">
             <DataGrid.Background>
